@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html leng ="eg">
+  <head>
+    <meta charset="UTF-8">
+    <title>Website Layout Two</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            min-height: 100vh;
+            flex-direction: row;
+            margin: 0;
+        }
+        .col-1{
+            background: rgb(93, 139, 155) ;
+            flex: 1;
+        }
+        .col-2{
+            display: flex;
+            flex-direction: column;
+            flex: 5;
+            background: black;
+        }
+        .content{
+          display:flex;
+          flex-flow: row;
+          align-content:center;
+          background: orange;
+          color: rgb(214, 90, 214);
+          font-weight: bold;
+          padding: 10px;
+
+        }
+        .content > article{
+            text-align: space-between;
+            flex: 3;
+            min-height: 60vh;
+            padding: 5px ;
+            margin: 0.5px ;
+            background: rgb(233, 233, 240);
+            color: black;
+        }
+        .content > aside{
+            text-align: space-between;
+            flex: 2;
+            min-height: 60vh;
+            padding: 5px ;
+            margin: 0.5px ;
+            background: black;
+
+        }
+        header,footer{
+            background: rgb(134, 134, 83);
+            height: 20vh;
+        }
+
+    </style>
+  </head>
+  <body>
+      <nav class="col-1">Nav</nav>
+      <div class="col-2">
+      <header><h1>Header</h1></header> 
+      <main class="content">
+          <article>
+              <h2>Article</h2>
+              <p>HTML is the language in which most websites are written. HTML is used to create pages and 
+                make them functional. The code used to make them visually appealing is known as CSS and we 
+                shall focus on this in a later tutorial. For now, we will focus on teaching you how to build rather than design.</p>
+          </article>
+          <aside><h2>ASide</h2></aside>
+      </main>
+      <footer><h1>Footer</h1></footer>   
+      </div>
+  </body>

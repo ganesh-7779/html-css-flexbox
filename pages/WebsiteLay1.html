@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html leng ="eg">
+  <head>
+    <meta charset="UTF-8">
+    <title>WebsiteLay_1</title>
+      <style>
+        body{ padding: 2px;}
+        .headerContainer{
+          display:flex;
+          flex-flow: column wrap;
+          align-content: left;
+          background: black;
+          font-weight: bold;
+          padding: 10px;
+          color: orange;
+          text-shadow: white 3px 3px 3px;
+        }
+       
+        .footerContainer{
+          display:flex;
+          flex-flow: column wrap;
+          align-content: left;
+          background: black;
+          font-weight: bold;
+          padding: 10px;
+          color: orange;
+          text-shadow: white 3px 3px 3px;
+        }
+        .mainContainer{
+          display:flex;
+          flex-flow: row wrap;
+          align-content:center;
+          background: orange;
+          color: rgb(214, 90, 214);
+          font-weight: bold;
+          padding: 10px;
+
+        } 
+        .article{
+          padding: 10px ;
+          margin: 10px ;
+          background: lavender;
+        }
+        .maiContainerItem{
+          text-align: left;
+          border: solid 2px red;
+
+          background: rgb(228, 230, 231);
+        }
+        .sideBarLeftItem{background: rgb(78, 77, 6);}
+        .sideBarRightItem{background: rgb(43, 8, 25);}
+        .sideBarItem{flex: 1 0 0; border: 1px solid lawngreen}
+        .maiContainerItem{flex: 2 0px}
+        .sideBarLeftItem{order: 2;}
+        .maiContainerItem{order: 0;}
+        .sideBarRightItem{order: 1;}
+      </style>
+  </head>  
+  <body>
+      <header class="headerContainer"><h1>Website layout 1 FlexBox Example</h1></header>
+      <div class="mainContainer">
+        <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><P>Nav</P></div></sideBar>
+        <section class="maiContainerItem">
+          <article>
+            <h2>Article</h2>
+            <p> HTML is the language in which most websites are written. HTML is used to create pages and 
+                make them functional. The code used to make them visually appealing is known as CSS and we 
+                shall focus on this in a later tutorial. For now, we will focus on teaching you how to build rather than design.
+                CSS has become a crucial part of building websites and blogs.
+                CSS goes hand in hand with HTML to display your website the way it's intended to be displayed.
+                 Here, you'll find CSS tutorials, code examples, and CSS reference material.About BridgeLabz Solutions BridgeLabz is a live Lab environment nurturing Fresh Engineers through Startups for Tech Companies at Zero Cost.
+                 Bridgelabz works with Tech Companies to hire fresh engineers and transforms them into industry-ready hard-core developers</p>
+          </article>
+        </section>
+        <sideBar class="sideBarItem sideBarRightItem"><div class="center"><P>Aside</P></div></sideBar>
+
+      </div>
+      <footer class="footerContainer">This is a footer</footer>
+ 
+  </body>
+</html>
